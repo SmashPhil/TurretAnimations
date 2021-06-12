@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -63,7 +63,8 @@
     <Compile Include="Graphics\Graphic_Animate.cs" />
     <Compile Include="Motes\MoteThrownExpand.cs" />
     <Compile Include="Motes\MoteThrownSlowToSpeed.cs" />
-    <Compile Include="Motes\Mote_CannonPlume.cs" />
+    <Compile Include="Motes\Mote_ExhaustPlume.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_RecoiledTurretTop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TurretTop_Artillery.cs" />
     <Compile Include="TurretTop_Recoiled.cs" />
@@ -74,4 +75,8 @@
     <Compile Include="Verbs\Verb_ShootRecoiled.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "D:\TurretAnimations\TurretAnimations.dll" "D:\Steam\steamapps\common\RimWorld\Mods\Halo-Frontier-Security-Pack\1.2\Assemblies"
+xcopy /y "D:\TurretAnimations\SmashTools.dll" "D:\Steam\steamapps\common\RimWorld\Mods\Halo-Frontier-Security-Pack\1.2\Assemblies"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

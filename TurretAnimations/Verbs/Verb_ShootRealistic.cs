@@ -221,7 +221,7 @@ namespace TurretAnimations
 									expandMote.growthRate = moteProps.growthRate.RandomInRange;
 								}
 							}
-							if (mote is Mote_CannonPlume cannonMote)
+							if (mote is Mote_ExhaustPlume cannonMote)
 							{
 								cannonMote.cyclesLeft = moteProps.cycles;
 								cannonMote.animationType = moteProps.animationType;

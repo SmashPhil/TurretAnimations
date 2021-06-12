@@ -3,7 +3,7 @@ using SmashTools;
 
 namespace TurretAnimations
 {
-	public class Mote_CannonPlume : Mote
+	public class Mote_ExhaustPlume : Mote
 	{
 		protected int ticksActive = 0;
 		protected int frame = 0;
